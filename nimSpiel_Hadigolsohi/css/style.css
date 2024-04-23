@@ -1,0 +1,115 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(#ddd, #f8f5a2);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 80vh;
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container h1 {
+  color: #f651a0;
+}
+.container h1 span {
+  color: #a94746;
+}
+
+.matches-container {
+  margin: 2.5rem 0 2rem;
+}
+
+.match {
+  display: inline-block;
+  width: 10px;
+  height: 80px;
+  background-color: #ffbf00;
+  margin: 0 5px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+.match::before {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #a94746;
+  border-radius: 20%;
+}
+.numbers {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  text-align: center;
+  color: black;
+  width: 10px;
+  height: 10px;
+}
+.message-container {
+  margin: 50px auto 30px;
+  width: 15rem;
+  line-height: 2rem;
+  background-color: #fbff00b7;
+}
+.message {
+  font-weight: bold;
+}
+#reset-btn,
+#start-btn {
+  padding: 12px 24px;
+  margin: 5rem auto;
+  background-color: #f594c3;
+  width: 100px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#reset-btn:hover,
+#start-btn:hover {
+  background-color: #f651a0;
+}
+.form {
+  margin-top: 4rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 85%;
+  margin: auto;
+}
+.player-lables {
+  font-weight: bold;
+  line-height: 1.5rem;
+  background-color: #f651a1be;
+  display: block;
+  margin: 20px;
+  border-radius: 5px;
+  height: 25px;
+  width: 160px;
+  align-self: center;
+}
+#first-input,
+#second-input {
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  background-color: transparent;
+  align-self: center;
+}
+.active-input {
+  border: 3px solid #f651a0 !important;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+}

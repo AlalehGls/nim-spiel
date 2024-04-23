@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nim-Spiel</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Willkommen bei <span> Nim-Spiel</span></h1>
+      <div class="match-container">
+        <!-- Streichhölzer -->
+      </div>
+
+      <div class="message-container">
+        <p class="message"></p>
+      </div>
+
+      <form class="form">
+        <!--Spieler 1 -->
+        <div>
+          <label class="player-lables">Spieler 1</label>
+          <input
+            type="text"
+            id="first-input"
+            name="first-input"
+            placeholder="Geben Sie eine Nummer ein:"
+          />
+          <canvas
+            class="canvas"
+            id="first-canvas"
+            width="60"
+            height="60"
+          ></canvas>
+        </div>
+        <!--Spieler 2 -->
+        <div>
+          <label class="player-lables" id="second-label">Spieler 2</label>
+          <input
+            type="text"
+            id="second-input"
+            name="second-input"
+            placeholder="Geben Sie eine Nummer ein:"
+          />
+          <canvas
+            class="canvas"
+            id="second-canvas"
+            width="60"
+            height="60"
+          ></canvas>
+        </div>
+      </form>
+      <button type="button" id="start-btn">Start</button>
+      <button type="button" id="reset-btn">Reset</button>
+    </div>
+
+    <script src="js/computer.js"></script>
+  </body>
+</html>
